@@ -31,11 +31,13 @@
         <fieldset id="account-type" form="account-registration">
             <legend>Select an account type (required):</legend>
             <label for="personal-account">
-                <input type="radio" name="account-type" id="personal-account" value="personal-account" checked required>
+                <input type="radio" name="account-type" id="personal-account" value="personal-account" class="inline"
+                    checked required>
                 Personal
             </label>
             <label for="business-account">
-                <input type="radio" name="account-type" id="business-account" value="business-account"> Business
+                <input type="radio" name="account-type" id="business-account" value="business-account" class="inline">
+                Business
             </label>
         </fieldset>
         <fieldset id="account-misc" form="account-registration">
@@ -59,9 +61,10 @@
             </label>
         </fieldset>
         <label for="terms-and-conditions">
-            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" required> I have read and agree
-            to the <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms
-                and Conditions</a>.
+            <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" class="inline" required> I have
+            read and agree
+            to the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">Terms
+                and Conditions</a>
         </label>
         <!--The first `input` element with a `type` of `submit` is automatically set to submit its nearest parent `form` element.-->
         <input type="submit" name="submit" id="submit" value="Submit">
