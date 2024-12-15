@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="evil_survey.css">
+    <title>How Evil Are You?</title>
+</head>
+
+<body>
+    <h1 id="title">How Evil Are You?</h1>
+    <p class="description" id="description">Powered by EVIL (Early Villain Inspiration Labs). Information you
+        provide here will
+        be used to help educate potential villains, including, but not limited to, those with tragic backstories.</p>
+    <form action="evil_survey_results.html" method="post" id="survey-form">
+        <legend>1. Please fill out some basic info about yourself.</legend>
+        <fieldset id="basic-info" form="survey-form">
+            <label for="first-name">First name
+                <input type="text" name="first-name" id="first-name" required>
+            </label>
+            <label for="last-name">Last name
+                <input type="text" name="last-name" id="last-name" required>
+            </label>
+            <label for="villain-name">Villain name (if applicable)
+                <input type="text" name="villain-name" id="villain-name">
+            </label>
+            <label for="age">Age
+                <input type="number" name="age" id="age" min="18" max="10000" required>
+            </label>
+            <label for="email">Email
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="phone-number">Phone number (optional)
+                <input type="tel" name="phone-number" id="phone-number" minlength="10" maxlength="10">
+            </label>
+            <label for="address">Address (optional)
+                <input type="text" name="address" id="address">
+            </label>
+            <label for="occupation-select">Which of these best describes your current occupation?</label>
+
+            <select name="occupations" id="occupation-select" class="occupation-select" required>
+                <option disabled selected value="">Please choose an occupation</option>
+                <option value="adventurer">Adventurer</option>
+                <option value="sage">Sage</option>
+                <option value="necromancer">Necromancer</option>
+                <option value="dragon">Dragon</option>
+                <option value="rogue">Rogue</option>
+                <option value="bartender">Bartender</option>
+                <option value="princess">Princess</option>
+                <option value="peasant">Peasant</option>
+                <option value="murderer">Murderer</option>
+                <option value="bum">Bum</option>
+                <option value="other">Other</option>
+                <option value="refuse">Refuse to answer</option>
+            </select>
+            </label>
+        </fieldset>
+        <legend>2. Tell us a little about your personality and morality.</legend>
+        <fieldset id="personality-morality" form="survey-form" class="personality-morality">
+            <p>Which of these traits describes your personality the best?</p>
+            <label for="good-compassionate">
+                <input type="radio" name="primary-personality" id="good-compassionate" value="good-compassionate"
+                    required checked>
+                Compassionate
+            </label>
+            <label for="good-honest">
+                <input type="radio" name="primary-personality" id="good-honest" value="good-honest">
+                Honest
+            </label>
+            <label for="good-kind">
+                <input type="radio" name="primary-personality" id="good-kind" value="good-kind">
+                Kind
+            </label>
+            <label for="good-helpful">
+                <input type="radio" name="primary-personality" id="good-helpful" value="good-helpful">
+                Helpful
+            </label>
+            <label for="neutral-lethargic">
+                <input type="radio" name="primary-personality" id="neutral-lethargic" value="neutral-lethargic">
+                Lethargic
+            </label>
+            <label for="neutral-unquestioning">
+                <input type="radio" name="primary-personality" id="neutral-unquestioning" value="neutral-unquestioning">
+                Unquestioning
+            </label>
+            <label for="neutral-bored">
+                <input type="radio" name="primary-personality" id="neutral-bored" value="neutral-bored">
+                Bored
+            </label>
+            <label for="neutral-avoidant">
+                <input type="radio" name="primary-personality" id="neutral-avoidant" value="neutral-avoidant">
+                Avoidant
+            </label>
+            <label for="evil-dishonest">
+                <input type="radio" name="primary-personality" id="evil-dishonest" value="evil-dishonest">
+                Dishonest
+            </label>
+            <label for="evil-vengeful">
+                <input type="radio" name="primary-personality" id="evil-vengeful" value="evil-vengeful">
+                Vengeful
+            </label>
+            <label for="evil-sadistic">
+                <input type="radio" name="primary-personality" id="evil-sadistic" value="evil-sadistic">
+                Sadistic
+            </label>
+            <label for="evil-greedy">
+                <input type="radio" name="primary-personality" id="evil-greedy" value="evil-greedy">
+                Greedy
+            </label>
+            <hr>
+            <p>Which of these traits describes your personality the <em>second</em> best?</p>
+            <label for="lawful-loyal">
+                <input type="radio" name="secondary-personality" id="lawful-loyal" value="lawful-loyal" checked>
+                Loyal
+            </label>
+            <label for="lawful-judgmental">
+                <input type="radio" name="secondary-personality" id="lawful-judgmental" value="lawful-judgmental">
+                Judgmental
+            </label>
+            <label for="lawful-cooperative">
+                <input type="radio" name="secondary-personality" id="lawful-cooperative" value="lawful-cooperative">
+                Cooperative
+            </label>
+            <label for="lawful-methodical">
+                <input type="radio" name="secondary-personality" id="lawful-methodical" value="lawful-methodical">
+                Methodical
+            </label>
+            <label for="neutral-selfish">
+                <input type="radio" name="secondary-personality" id="neutral-selfish" value="neutral-selfish">
+                Selfish
+            </label>
+            <label for="neutral-disinterested">
+                <input type="radio" name="secondary-personality" id="neutral-disinterested"
+                    value="neutral-disinterested">
+                Disinterested
+            </label>
+            <label for="neutral-laconic">
+                <input type="radio" name="secondary-personality" id="neutral-laconic" value="neutral-laconic">
+                Laconic
+            </label>
+            <label for="neutral-pragmatic">
+                <input type="radio" name="secondary-personality" id="neutral-pragmatic" value="neutral-pragmatic">
+                Pragmatic
+            </label>
+            <label for="chaotic-boastful">
+                <input type="radio" name="secondary-personality" id="chaotic-boastful" value="chaotic-boastful">
+                Boastful
+            </label>
+            <label for="chaotic-impulsive">
+                <input type="radio" name="secondary-personality" id="chaotic-impulsive" value="chaotic-impulsive">
+                Impulsive
+            </label>
+            <label for="chaotic-rebellious">
+                <input type="radio" name="secondary-personality" id="chaotic-rebellious" value="chaotic-rebellious">
+                Rebellious
+            </label>
+            <label for="chaotic-selfabsorbed">
+                <input type="radio" name="secondary-personality" id="chaotic-selfabsorbed" value="chaotic-selfabsorbed">
+                Self-absorbed
+            </label>
+        </fieldset>
+        <legend>3. Please select any of the following crimes that you have committed:</legend>
+        <fieldset id="skills" form="survey-form">
+            <label for="arson">
+                <input type="checkbox" name="arson" id="arson" value="arson">Arson
+            </label>
+            <label for="murder">
+                <input type="checkbox" name="murder" id="murder" value="murder">Murder
+            </label>
+            <label for="pineapple-pizza">
+                <input type="checkbox" name="pineapple-pizza" id="pineapple-pizza" value="pineapple-pizza">Putting
+                pineapple on pizza
+            </label>
+            <label for="thievery">
+                <input type="checkbox" name="thievery" id="thievery" value="thievery">Thievery
+            </label>
+            <label for="mansions-palaces">
+                <input type="checkbox" name="mansions-palaces" id="mansions-palaces" value="mansions-palaces">Making
+                spooky mansions or palaces
+            </label>
+            <label for="infidelity">
+                <input type="checkbox" name="infidelity" id="infidelity" value="infidelity">Infidelity
+            </label>
+            <label for="treason">
+                <input type="checkbox" name="treason" id="treason" value="treason">Treason
+            </label>
+            <label for="bullying">
+                <input type="checkbox" name="bullying" id="bullying" value="bullying">Bullying (especially Canadians)
+            </label>
+            <label for="tickling">
+                <input type="checkbox" name="tickling" id="tickling" value="tickling">Tickling
+            </label>
+            <label for="sarcasm">
+                <input type="checkbox" name="sarcasm" id="sarcasm" value="sarcasm">Sarcasm
+            </label>
+            <label for="sexual-debauchery">
+                <input type="checkbox" name="sexual-debauchery" id="sexual-debauchery" value="sexual-debauchery">Sexual
+                debauchery
+            </label>
+            <label for="calling-santa">
+                <input type="checkbox" name="calling-santa" id="calling-santa" value="calling-santa">Calling Santa
+                before Christmas
+            </label>
+        </fieldset>
+        <legend>4. Is there anything else we should know about you?</legend>
+        <fieldset id="anything-else-to-know" form="survey-form">
+            <label for="comments-concerns">Tell us about your pets, minions, hobbies, tragic backstory, or your weirdest
+                thoughts.
+                <textarea name="comments-concerns" id="comments-concerns" rows="10" cols="10"></textarea>
+            </label>
+        </fieldset>
+        <legend>5. Did you answer every question truthfully? Your answer to this final question will aid us in
+            our determination of your evil status, so please answer this question truthfully no matter what your real
+            answer is.</legend>
+        <fieldset id="answered-truthfully-yesno">
+            <label for="yes" class="yes-label">
+                <input type="radio" name="answered-truthfully-yesno" id="yes" class="yesno-button" checked required>Yes
+            </label>
+            <label for="no" class="no-label">
+                <input type="radio" name="answered-truthfully-yesno" id="no" class="yesno-button">No
+            </label>
+        </fieldset>
+    </form>
+    <a href="evil_survey_results.html">
+        <button type="button" name="submit" id="submit-button" class="submit-button">SUBMIT</button>
+    </a>
+</body>
+
+</html>

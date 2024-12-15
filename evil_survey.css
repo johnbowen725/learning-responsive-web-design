@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap');
+
+body {
+    margin: 0 auto;
+    width: 60vw;
+    font-family: "Crimson Text", sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+h1,
+.results-message,
+.results {
+    font-family: "Gayathri", sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.description {
+    margin: 0 0 2rem 0;
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+fieldset,
+legend {
+    width: 60vw;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem 1.25rem 2rem;
+    border-color: firebrick;
+    border-width: 0.25rem;
+}
+
+.personality-morality {
+    padding-bottom: 0.5rem;
+}
+
+legend {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 2rem;
+    margin: 0.25rem 0;
+    padding: 0.25rem;
+    border: 0.25rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0.25em 0;
+    vertical-align: middle;
+}
+
+.occupation-select {
+    margin: -0.25rem 0 0.5rem 0;
+}
+
+hr {
+    border: 1px solid firebrick;
+    margin: 1.5em 0 2em 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0 0 0;
+}
+
+.submit-button {
+    display: block;
+    margin: 2rem auto;
+    width: 50%;
+    line-height: 2.5rem;
+    background-color: black;
+    color: firebrick;
+    border-color: firebrick;
+    border-width: 0.5rem;
+    font-family: "Crimson Text", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: unset;
+}
+
+.results,
+.results-message {
+    font-family: "Crimson Text";
+    margin-top: 5rem;
+}
+
+.results-message {
+    font-size: 3rem;
+}
+
+.results {
+    font-size: 5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    color: firebrick;
+}
