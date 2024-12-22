@@ -43,18 +43,18 @@
                 <h2 id="html-questions">HTML Questions</h2>
                 <div class="question-block">
                     <h3><span class="sr-only">Question</span>1</h3>
-                    <fieldset class="question" name="html-question-one" id="html-question-one">
+                    <fieldset class="question" name="html-question-one" id="q1">
                         <legend>True or False? The President of the United States is Barack Obama.</legend>
                         <ul class="answers-list">
                             <li>
-                                <label for="html-question-one-true">
-                                    <input type="radio" name="html-question-one-true" id="html-question-one-true"
-                                        checked> True
+                                <label for="q1-a1">
+                                    <input type="radio" name="q1-a" id="q1-a1" value="true" checked>
+                                    True
                                 </label>
                             </li>
                             <li>
-                                <label for="html-question-one-false">
-                                    <input type="radio" name="html-question-one-false" id="html-question-one-false">
+                                <label for="q1-a2">
+                                    <input type="radio" name="q1-a" id="q1-a2" value="false">
                                     False
                                 </label>
                             </li>
@@ -63,18 +63,18 @@
                 </div>
                 <div class="question-block">
                     <h3><span class="sr-only">Question</span>2</h3>
-                    <fieldset class="question" name="html-question-two" id="html-question-two">
+                    <fieldset class="question" name="html-question-two" id="q2">
                         <legend>True or False? Cats have two tails.</legend>
                         <ul class="answers-list">
                             <li>
-                                <label for="html-question-two-true">
-                                    <input type="radio" name="html-question-two-true" id="html-question-two-true"
-                                        checked> True
+                                <label for="q2-a1">
+                                    <input type="radio" name="q2-a" id="q2-a1" value="true" checked>
+                                    True
                                 </label>
                             </li>
                             <li>
-                                <label for="html-question-two-false">
-                                    <input type="radio" name="html-question-two-false" id="html-question-two-false">
+                                <label for="q2-a2">
+                                    <input type="radio" name="q2-a" id="q2-a2" value="false">
                                     False
                                 </label>
                             </li>
@@ -84,9 +84,36 @@
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="css-q1-a1">Are you a mouse?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="css-q1" id="css-q1-a1" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css-q2-a1">Is the world going to end in the next 100 years? Why or why not?</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="css-q2" id="css-q2-a1" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
             </section>
+            <button type="submit" name="" id="">Send</button>
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a><br>
+            San Francisco<br>
+            California<br>
+            USA
+        </address>
+    </footer>
 </body>
 
 </html>

@@ -5,11 +5,19 @@ body {
     margin: 0;
 }
 
+main {
+    padding-top: 25px;
+}
+
 header {
     width: 100%;
     height: 50px;
     background-color: #1b1b32;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 #logo {
@@ -25,14 +33,41 @@ nav {
     height: 50px;
 }
 
+/* This is called the child combinator. Here, it selects any `ul` elements that are directly descended from a `nav` parent element. All other `ul` elements will be unaffected. */
 nav>ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+/* Here's another child combinator. It can be used multiple times to select children of other children. Think of it like nesting, or babysitting the grandkids. Here, it selects any `li` elements that are directly descended from a `ul` parent element. The `ul` element must also directly descend from a `nav` parent element. All other `li` elements will be unaffected. */
+
+nav>ul>li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+nav>ul>li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+li>a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
 }
 
 h1,
@@ -54,4 +89,8 @@ h2 {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+h3::before {
+    content: "Question #";
 }
